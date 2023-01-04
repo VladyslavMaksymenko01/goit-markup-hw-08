@@ -1,0 +1,31 @@
+.feature {
+  display: flex;
+}
+
+.features__item {
+  margin-right: 30px;
+  width: 270px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  background-color: var(--third-bg-color);
+  margin-bottom: 30px;
+}
+
+.features-titles {
+  margin-bottom: 10px;
+  @include font700(700, 14, 16, 0.03);
+
+  text-transform: uppercase;
+}
+.features-text {
+  @include font(400, 14, 24, 0.03);
+  color: var(--primary-text-color);
+}

@@ -1,0 +1,97 @@
+.filtr {
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+}
+
+.filtr--move {
+  margin-bottom: 50px;
+}
+
+.filtr__btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-family: inherit;
+  @include font500(500, 16, 26, 0.03);
+  color: var(--secondary-text-color);
+  border: transparent;
+  cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.filtr__btn:hover,
+.filtr__btn:focus {
+  background-color: var(--accent-text-color);
+  color: var(--third-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+// __________LIST OF THE FILTR WEBSITE_______
+.website-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.website-list__item {
+  max-width: 370px;
+  width: calc((100% - 60px) / 3);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.website-list__item:hover .website-list__overlay-text {
+  transform: translateY(0);
+}
+.website-list__link {
+  display: inline-block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.website-list__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.website-list__overlay {
+  position: relative;
+  overflow: hidden;
+}
+.website-list__overlay-text {
+  position: absolute;
+  padding: 63px 24px;
+  height: 100%;
+  top: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  @include font(400, 18, 28, 0.03);
+  color: var(--third-text-color);
+  background-color: #2196f3e5;
+  transform: translateY(100%);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ___CARD-SET-WEBSITE___ */
+.project {
+  padding: 20px 24px;
+}
+
+.project__title {
+  margin-bottom: 4px;
+
+  @include font700(700, 18, 36, 0.06);
+  color: var(--secondary-text-color);
+}
+
+.project__text {
+  @include font(400, 16, 30, 0.03);
+  color: var(--primary-text-color);
+}

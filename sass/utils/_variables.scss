@@ -1,0 +1,36 @@
+// Палітра кольорів макета і набори шрифтів
+:root {
+  --logo: #000000;
+  --btn-hover: #188ce8;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #ffffff;
+  --accent-text-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --third-bg-color: #f5f4fa;
+  --forth-bg-color: #f5f5f5;
+  --icons: #afb1b8;
+  --transition1: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition2: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font($fw: 400, $fs: 14, $lh: 16, $ls: 0.02) {
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh/$fs;
+  letter-spacing: $ls + em;
+}
+@mixin font500($fw: 500, $fs: 14, $lh: 16, $ls: 0.02) {
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh/$fs;
+  letter-spacing: $ls + em;
+}
+
+@mixin font700($fw: 700, $fs: 26, $lh: 31, $ls: 0.02) {
+  font-weight: $fw;
+  font-size: $fs + px;
+  line-height: $lh/$fs;
+  letter-spacing: $ls + em;
+}

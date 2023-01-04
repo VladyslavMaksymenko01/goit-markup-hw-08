@@ -1,0 +1,19 @@
+.logo {
+  text-decoration: none;
+  font-family: "Raleway";
+  @include font700(700, 26, 31, 0.03);
+}
+.logo--dark {
+  margin-right: 93px;
+  color: var(--logo);
+}
+.logo--light {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--third-text-color);
+}
+.logo__accent {
+  font-family: "Raleway" sans-serif;
+  @include font700(700, 26, 31, 0.03);
+  color: var(--accent-text-color);
+}
