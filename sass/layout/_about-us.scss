@@ -3,11 +3,20 @@
 }
 .about-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  @media screen and (max-width: 480px), (min-width: 480px) {
+  }
 }
+// .about__items {
+//   justify-content: center;
+//   align-items: center;
+// }
 .about__img {
   position: relative;
   width: 370px;
+  // width: 100%;
 }
 
 .about__overlay-text {

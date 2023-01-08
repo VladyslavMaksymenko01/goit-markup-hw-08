@@ -1,12 +1,26 @@
 .feature {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .features__item {
-  margin-right: 30px;
-  width: 270px;
   &:last-child {
     margin-right: 0px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+
+    // margin-right: 30px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: calc((100% - 120px) / 4);
+    gap: 30px;
   }
 }
 
